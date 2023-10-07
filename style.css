@@ -1,0 +1,317 @@
+/* SETUP */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.border {
+    border: 2px solid;
+    border-color: #00986f;
+}
+
+body {
+    background: #1d2026;
+}
+
+.hiddenL {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hiddenR {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@media(prefers-reduce-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3b3e44;
+    border: none;
+    border-radius: 3px;
+  }
+  
+/* NAVBAR */
+.navbarcolor {
+    background-color: #1d2026;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav i {
+    margin-left: 30px;
+}
+
+nav a {
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    transition: all 0.2s ease;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    color: #00986f;
+}
+
+nav .socials {
+    width: 33%;
+}
+
+nav .head {
+    width: 33%;
+}
+
+nav .links {
+    flex: 1;
+    text-align: right;
+    z-index: 200;
+    width: 33%;
+}
+
+/* HERO */
+.hero {
+    display: grid;
+    height: 700px;
+    place-items: center;
+    align-content: center;
+    position: sticky;
+    z-index: 50;
+}
+
+.hero h1 {
+    font-size: 7em;
+    color: #fff;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+}
+
+.hero h1 span {
+    color: #00986f;
+}
+
+@keyframes scaleOut {
+    100% {font-size: 2em;}
+}
+
+.balh {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.arr {
+    transition: all 1s;
+}
+
+/* CODING*/
+#coding {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+}
+
+.projects-description {
+    grid-column: 1;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.projects-description h1 {
+    color: #fff;
+}
+
+.projects-description h2 {
+    color: #fff;
+}
+
+.projects-description p {
+    color: #fff;
+}
+
+.projects {
+    grid-column: 2;
+}
+
+
+#coding h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+#coding h1 span {
+    color: #00986f;
+}
+
+#coding h2 {
+    font-size: 2em;
+}
+
+#coding p {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#coding .list {
+    text-align: left;
+    margin-left: 150px;
+}
+
+#coding li {
+    color: #fff;
+}
+
+
+/* FITNESS */
+#fitness {
+    height: 800px;
+    width: 100%;
+    display: grid;
+    padding: 40px;
+    column-gap: 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+#fitness .text {
+    grid-column: 2;
+    display: grid;
+    place-content: center;
+    text-align: left;
+
+}
+
+.center_text {
+    display: flex;
+    justify-content: center;
+}
+
+#fitness .tile {
+    grid-column: 1;
+    background-color: #22252b;
+    border-radius: 25px;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3b3e44;
+}
+
+#fitness .transformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.one {
+    grid-column: 1;
+    margin-right: 50px;
+
+}
+
+.two {
+    grid-column: 2;
+    margin-left: 50px;
+}
+
+#fitness .tile img {
+    border-radius: 10px;
+}
+
+
+#fitness h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+#fitness h1 span {
+    color: #00986f;
+}
+
+#fitness p {
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.mainbtn {
+    width: 250px;
+    height: 70px;
+    background-color: #00986f;
+    border: none;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.mainbtn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+}
+
+.child:nth-child(2) {
+    transition-delay: 200ms;
+}
+
