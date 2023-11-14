@@ -43,5 +43,3 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 const hiddenElementsR = document.querySelectorAll('.hiddenR');
 hiddenElementsR.forEach((el) => observer.observe(el))
-
-
