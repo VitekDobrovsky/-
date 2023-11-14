@@ -41,6 +41,10 @@ body {
     transform: translateX(0);
 }
 
+.link {
+    text-decoration: none;
+    color: #00986f;
+}
 
 @media(prefers-reduce-motion) {
     .hidden {
@@ -187,6 +191,12 @@ nav .links {
 
 .projects-description p {
     color: #fff;
+}
+
+.ninjaadventure {
+    text-align: justify;
+    margin-top: 20px;
+    width: 30em;
 }
 
 .projects {
