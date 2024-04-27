@@ -2,8 +2,17 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(graphics/coolvetica\ rg.otf);
+}
+
+@font-face {
+    font-family: Episode;
+    src: url(graphics/OPTIMA.TTF);
 }
 
 html {
@@ -14,16 +23,15 @@ html {
 
 .border {
     border: 2px solid;
-    border-color: #00986f;
+    border-color: #980000;
 }
 
 body {
-    background: #1d2026;
+    background: #264E1B;
 }
 
 .hiddenL {
     opacity: 0;
-    filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
 }
@@ -35,16 +43,19 @@ body {
     transition: all 1s;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1s;
+}
+
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
 
-.link {
-    text-decoration: none;
-    color: #00986f;
-}
+
 
 @media(prefers-reduce-motion) {
     .hidden {
@@ -53,31 +64,19 @@ body {
 }
 
 /* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #3b3e44;
-    border: none;
-    border-radius: 3px;
-  }
+/* ::-webkit-scrollbar {
+    width: 0;
+  } */
   
 /* NAVBAR */
 .navbarcolor {
-    background-color: #1d2026;
+    background-color: #264E1B;
     width: 100%;
     height: 70px;
     position: fixed;
     top: 0;
     z-index: 50;
-
+    transition: 0.4s all ease-in;
 }
 
 nav {
@@ -99,18 +98,13 @@ nav i {
 nav a {
     text-align: right;
     text-decoration: none;
-    color: #fff;
     font-size: 1.5em;
     transition: all 0.2s ease;
     margin-right: 15px;
 }
 
-nav a:hover {
-    color: #00986f;
-}
-
 nav .socials {
-    width: 33%;
+    margin: 0;
 }
 
 nav .head {
@@ -124,6 +118,9 @@ nav .links {
     width: 33%;
 }
 
+
+
+
 /* HERO */
 .hero {
     display: grid;
@@ -136,13 +133,12 @@ nav .links {
 
 .hero h1 {
     font-size: 7em;
-    color: #fff;
+    color: #D3E923;
     transition: all 0.5s ease;
     margin-top: 10px;
-}
+    font-weight: 1000;
+    transition: 0.4s all ease-in;
 
-.hero h1 span {
-    color: #00986f;
 }
 
 @keyframes scaleOut {
@@ -164,6 +160,135 @@ nav .links {
 .arr {
     transition: all 1s;
 }
+
+.whoami {
+    text-align: center;
+}
+
+.whoami h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    color: #D3E923;
+}
+
+/* BUSINESS */
+#business {
+    height: 3600px;
+    background-color: #780116;
+    display: flexbox;
+    text-align: center;
+    font-family: Coolvetica;
+    color: #E8C0E8;
+    font-weight: 1;
+}
+
+#business h2 {
+    font-size: 6em;
+    margin-bottom: 100px;
+}
+
+#business .wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    gap: 100px;
+}
+
+#business .wrapper .images {
+    display: grid;
+    place-items: center;
+}
+
+
+#business .wrapper .names .des {
+    top: 40%;
+    margin-bottom: 50%;
+    margin-top: 130%;
+    position: sticky;
+    text-align: left;
+}
+
+
+#business .wrapper .names .des h3{
+    font-size: 6em;
+    color: white;
+
+}
+
+#business .wrapper .names .des h4 {
+    font-size: 2em;
+    color: #E8C0E8;
+
+    margin-bottom: 10px;
+}
+
+#business .wrapper .names .des p {
+    font-size: 1.5em;
+}
+
+.notactive {
+    color: #D6A337;
+}
+
+.active {
+    color: #1A8CD5;
+}
+
+/* CREATIVE */
+#creative {
+    height: 2000px;
+    background-color: #E9C0E9;
+    display: flex;
+    justify-content: center;
+    font-family: Episode;
+}
+
+#creative .headline {
+    text-align: center;
+    color: #502374;
+    margin-top: 200px;
+}
+
+#creative .headline h2 {
+    font-size: 10em;
+    font-weight: 1000;
+}
+
+#creative .headline h3 {
+    font-size: 8em;
+    font-weight: 600;
+}
+
+#creative .headline h4 {
+    font-size: 8em;
+    font-weight: 500;
+}
+
+#creative .headline h5 {
+    font-size: 3em;
+    font-weight: 800;
+    color: rgb(232, 255, 57);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CODING*/
 #coding {

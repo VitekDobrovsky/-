@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,36 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
     <script src="https://kit.fontawesome.com/efd46de1a3.js" crossorigin="anonymous"></script>
-    
+
 </head>
+
 <body>
 
     <!--NAVBAR-->
-    <div class="navbarcolor"></div>
+    <div class="navbarcolor" id="navbar"></div>
     <nav>
 
         <div class="socials">
-            <a href="https://www.instagram.com/vitek.dobrovsky/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-            <a href="https://www.facebook.com/vitek.dobrovsky.9/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
-            <a href="https://discordid.netlify.app/?id=531514895636758554" target="_blank"><i class="fa-brands fa-discord fa-xl"></i></a>
-            <a href="https://open.spotify.com/user/tumnj6qvpm1ggszzf2s63wust?si=6af810692f7e4e4c" target="_blank"><i class="fa-brands fa-spotify fa-xl"></i></a>
-            <a href="https://github.com/VitekDobrovsky" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
-            <a href="https://friend.chess.com/K5ADn" target="_blank"><i class="fa-solid fa-chess-pawn fa-xl"></i></a>
+            <a href="https://www.instagram.com/vitek.dobrovsky/" target="_blank"><i
+                    class="fa-brands fa-instagram fa-l lnk"></i></a>
+            <a href="https://www.facebook.com/vitek.dobrovsky.9/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-l lnk"></i></a>
+            <a href="https://discordid.netlify.app/?id=531514895636758554" target="_blank"><i
+                    class="fa-brands fa-discord fa-l lnk"></i></a>
+            <a href="https://open.spotify.com/user/tumnj6qvpm1ggszzf2s63wust?si=6af810692f7e4e4c" target="_blank"><i
+                    class="fa-brands fa-spotify fa-l lnk"></i></a>
+            <a href="https://github.com/VitekDobrovsky" target="_blank"><i class="fa-brands fa-github fa-l lnk"></i></a>
+            <a href="https://friend.chess.com/K5ADn" target="_blank"><i class="fa-solid fa-chess-pawn fa-l lnk"></i></a>
         </div>
-        
+
         <div class="head"></div>
 
-        <div class="links">
-            <a href="#home"><i class="fa-solid fa-house fa-sm"></i></a>
-            <a href="#coding">Coding</a>
-            <a href="#fitness">Fitness</a>
-            <a href="#business">Business</a>
-            <a href="#learning">Learning</a>
-            <a href="#contact">Contact</a>
+        <div class="links" id="navlinks">
+            <a href="#home"><i class="fa-solid fa-house fa-sm lnk"></i></a>
+            <a href="#business" class="lnk">Business</a>
+            <a href="#creative" class="lnk">Creative</a> <!-- COding, Photos, Videos -->
+            <a href="#fitness" class="lnk">Fitness</a>
+            <a href="#contact" class="lnk">Contact</a>
         </div>
 
     </nav>
@@ -41,27 +46,38 @@
     <div class="hero" id="home">
         <h1 id="name">Vítek <span>Dobrovský</span></h1>
     </div>
+    <div class="whoami">
+        <h3>Who am I?</h3>
+    </div>
 
-    <div class="balh"><i class="arr fa-sharp fa-solid fa-arrow-down-long fa-bounce fa-3x" style="color: #00986f;"></i></div>
+    <div class="balh"><i class="arr fa-sharp fa-solid fa-arrow-down-long fa-bounce fa-3x" style="color: #fff;"></i>
+    </div>
 
-    <!-- CODING -->
-    <section>
-        <div id="coding" class="">
-            <div class="projects-description hiddenL">
-                <div class="txtdes">
-                    <h1><span>Coding</span> Projects</h1>
-                    <div class="ninjaadventure">
-                        <h2>Ninja Adventures</h2>
-                        <p>
-                            Simple <span>Python game</span> made with graphics made by <a href="https://www.patreon.com/pixelarchipel" target="_blank" class="link">Pixel Archipel</a> and Me.
-                            This game isn't finish yet.
-                        </p>
-                    </div>
+
+    <!-- BUSINESS -->
+    <section id="business">
+        <div class="wrapper ">
+            <div class="images">
+                <h2 class="hiddenL">Entrepreneur</h2>
+                <img class="hidden" src="graphics/cutbros.png" width="400px" alt="cutbros_graphics">
+                <img class="hidden" src="graphics/pslibresells.jpeg" width="400px" alt="pslib_resells">
+                <img class="hidden" src="graphics/astra-leads logo.png" width="400px" alt="astrakold">
+            </div>
+            <div class="names">
+                <div class="des" id="businesses">
+
                 </div>
             </div>
-            <div class="project hiddenL">
-                <video src="graphics/nina.mp4" height="600" loop autoplay muted></video>
-            </div>
+        </div>
+    </section>
+
+    <!-- CREATIVE -->
+    <section id="creative">
+        <div class="headline">
+            <h5>amateur</h5>
+            <h2>Photographer</h2>
+            <h3>Videographer</h3>
+            <h4>Editor</h4>
         </div>
     </section>
 
@@ -79,16 +95,39 @@
                 <h1>My <span>Fitness</span> Journey</h1>
                 <div class="center_text">
                     <p><br> BENCH: &nbsp &nbsp &nbsp&nbsp <span>85</span>kg <br><br>
-                    DEADLIFT: &nbsp <span>150</span>kg <br><br>
-                    SQUAD: &nbsp &nbsp &nbsp &nbsp<span>90</span>kg</p>
-                    
+                        DEADLIFT: &nbsp <span>150</span>kg <br><br>
+                        SQUAD: &nbsp &nbsp &nbsp &nbsp<span>90</span>kg</p>
+
                 </div>
-                
+
                 <button class="mainbtn child hiddenR">
                     <a href="">View More</a>
                 </button>
             </div>
-            
+
+        </div>
+    </section>
+
+    <!-- CODING -->
+    <section>
+        <div id="coding" class="">
+            <div class="projects-description hiddenL">
+                <div class="txtdes">
+                    <h1><span>Coding</span> Projects</h1>
+                    <div class="ninjaadventure">
+                        <h2>Ninja Adventures</h2>
+                        <p>
+                            Simple <span>Python game</span> made with graphics made by <a
+                                href="https://www.patreon.com/pixelarchipel" target="_blank" class="link">Pixel
+                                Archipel</a> and Me.
+                            This game isn't finish yet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="project hiddenL">
+                <video src="graphics/nina.mp4" height="600" loop autoplay muted></video>
+            </div>
         </div>
     </section>
 
@@ -98,4 +137,5 @@
 
 
 </body>
+
 </html>
