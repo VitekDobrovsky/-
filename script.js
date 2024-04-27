@@ -61,7 +61,7 @@ window.addEventListener("scroll", () => {
     setColorsToWelcome();
   } else if (scrollPos < 4619) {
     setColorsToBusiness();
-  } else if (scrollPos > 4619) {
+  } else if (scrollPos > 4719) {
     setColorsToCreative();
   }
   if (scrollPos > 270) {
