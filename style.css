@@ -240,7 +240,7 @@ nav .links {
 
 /* CREATIVE */
 #creative {
-    height: 2500px;
+    height: 2550px;
     background-color: #E9C0E9;
     font-family: Episode;
     padding-top: 250px;
@@ -344,9 +344,9 @@ nav .links {
 
 }
 
-.videography {
+.misa2 {
     position: absolute;
-    top: 1650px;
+    top: 1900px;
     left: 20px;
 }
 
@@ -361,6 +361,15 @@ nav .links {
     left: 250px;
     --parallax-speed: 4;
 }
+.lenda4 {
+    position: absolute;
+    top: 1800px;
+    left: 700px;
+    --parallax-speed: 2;
+
+}
+
+
 
 #codign {
     height: 1000px;
